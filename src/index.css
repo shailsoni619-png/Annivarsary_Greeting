@@ -208,6 +208,10 @@ h3 {
   color: var(--wine);
 }
 
+.key-zero {
+  grid-column: 2;
+}
+
 .key-clear {
   grid-column: 1 / -1;
 }
@@ -250,9 +254,7 @@ h3 {
 
 .story-content button,
 .quiz-nav button,
-.cta-link,
-.envelope-toggle,
-.gift-box {
+.cta-link {
   border: none;
   border-radius: 14px;
   padding: 0.72rem 1rem;
@@ -428,28 +430,75 @@ h3 {
 .surprise-stage {
   display: grid;
   justify-items: center;
-  gap: 0.9rem;
+  gap: 1rem;
 }
 
-.gift-box {
-  min-width: 210px;
-  min-height: 56px;
-  transform-origin: center;
+.envelope-hero {
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
-.gift-box.opened {
-  animation: pop 0.45s ease;
+.envelope-hero:hover {
+  transform: translateY(-2px);
 }
 
-.envelope {
-  width: min(100%, 420px);
+.envelope-art {
+  position: relative;
+  display: block;
+  width: min(84vw, 320px);
+  aspect-ratio: 4 / 3;
+  perspective: 900px;
+}
+
+.envelope-body {
+  position: absolute;
+  inset: 0;
   border-radius: 18px;
-  background: rgba(255, 255, 255, 0.86);
-  border: 1px solid var(--border);
+  background:
+    linear-gradient(135deg, rgba(248, 215, 210, 0.95), rgba(216, 134, 132, 0.95)),
+    linear-gradient(45deg, rgba(122, 46, 58, 0.15), rgba(122, 46, 58, 0));
+  border: 1px solid rgba(122, 46, 58, 0.26);
   box-shadow: var(--shadow);
-  padding: 0.9rem;
-  display: grid;
-  gap: 0.7rem;
+}
+
+.envelope-flap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 52%;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  background: linear-gradient(160deg, #f7dbd6, #d68184);
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  transform-origin: top center;
+  transition: transform 0.6s ease;
+}
+
+.envelope-heart {
+  position: absolute;
+  left: 50%;
+  top: 57%;
+  transform: translate(-50%, -50%);
+  font-size: clamp(1.8rem, 9vw, 2.4rem);
+  color: #8f364c;
+  transition: transform 0.45s ease, opacity 0.45s ease;
+}
+
+.envelope-hero.opened .envelope-flap {
+  transform: rotateX(165deg);
+}
+
+.envelope-hero.opened .envelope-heart {
+  opacity: 0;
+  transform: translate(-50%, 8px) scale(0.84);
+}
+
+.letter-scroll-wrap {
+  width: min(100%, 420px);
 }
 
 .letter {
@@ -459,17 +508,15 @@ h3 {
   padding: 0.8rem;
 }
 
+.letter-scroll {
+  max-height: min(46vh, 330px);
+  overflow-y: auto;
+  padding-right: 0.35rem;
+}
+
 .letter p {
   white-space: pre-wrap;
   margin: 0;
-}
-
-.video-wrap video {
-  width: 100%;
-  border-radius: 18px;
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow);
-  background: #1b1617;
 }
 
 .route-story,

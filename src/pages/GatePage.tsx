@@ -72,7 +72,12 @@ export const GatePage = ({ meta, onUnlock }: GatePageProps) => {
 
         <div className="keypad" role="group" aria-label="Passcode keypad">
           {keypadNumbers.map((number) => (
-            <button key={number} onClick={() => addDigit(number)} className="key" type="button">
+            <button
+              key={number}
+              onClick={() => addDigit(number)}
+              className={`key ${number === 0 ? "key-zero" : ""}`}
+              type="button"
+            >
               {number}
             </button>
           ))}
