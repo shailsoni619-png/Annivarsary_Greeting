@@ -8,56 +8,56 @@
   "storyCards": [
     {
       "id": "chapter-1",
-      "image": "/uploads/img-20130706-wa0001.jpg",
+      "image": "uploads/chapter-1.jpg",
       "caption": "When I first saw you this day, and suddenly life felt brighter.",
       "noteTitle": "The First Spark",
       "noteBody": "When I first got your number, I did not know then how important that moment would become. All forward messages to each other had some hidden meaning behind them and I just knew I wanted one more conversation with you, and then one more after that."
     },
     {
       "id": "chapter-2",
-      "image": "/uploads/placeholder-love.svg",
-      "caption": "Our late-night talks became my favorite place.",
-      "noteTitle": "Falling For You",
-      "noteBody": "Somewhere between the laughter, the teasing, and the long calls, my world quietly started orbiting around you."
+      "image": "uploads/img-20131027-wa0001.jpg",
+      "caption": "Our endless rides in the town became a lifelong ride",
+      "noteTitle": "Riding along",
+      "noteBody": "Somewhere between small rides and meet ups here and there, I somehow knew this would become a lifelong ride of love and companionship. "
     },
     {
       "id": "chapter-3",
-      "image": "/uploads/placeholder-love.svg",
+      "image": "uploads/img-20121001-wa0007.jpg",
       "caption": "We chose each other, not just once, but forever.",
       "noteTitle": "The Promise",
-      "noteBody": "Our wedding day was magical, but what means even more is every ordinary day after it where we kept choosing love, patience, and us."
+      "noteBody": "All we knew was we wanted to be with each other for a life time, that's it! We did not think much. But just that one belief was strong enough to overcome all hurdles. Even tough days felt lighter because we were a true team."
     },
     {
       "id": "chapter-4",
-      "image": "/uploads/placeholder-love.svg",
-      "caption": "Trips, chai breaks, random selfies, and tiny rituals.",
-      "noteTitle": "Our Little World",
-      "noteBody": "You make every place feel like home. Even the smallest moments become memories when I am with you."
+      "image": "uploads/img_0509.jpg",
+      "caption": "We made it!",
+      "noteTitle": "Together Forever!",
+      "noteBody": "Thank you for standing beside me through everything. Your calm, your kindness, and your courage have carried us through more than words can hold and allowed us to stay together forever."
     },
     {
       "id": "chapter-5",
-      "image": "/uploads/placeholder-love.svg",
-      "caption": "Even tough days felt lighter because we were a team.",
-      "noteTitle": "Our Strength",
-      "noteBody": "Thank you for standing beside me through everything. Your calm, your kindness, and your courage have carried us through more than words can hold."
+      "image": "uploads/img_7664.jpeg",
+      "caption": "Our Little World",
+      "noteTitle": "Our Little World",
+      "noteBody": "We made our little world together bit by bit with tons of small moments, ups and downs, laughs and cries. You are still my safest and happiest place. "
     },
     {
       "id": "chapter-6",
-      "image": "/uploads/placeholder-love.svg",
-      "caption": "You are still my safest place and my happiest thought.",
+      "image": "uploads/img_2921.jpeg",
+      "caption": "Today",
       "noteTitle": "Today",
-      "noteBody": "After six years, my favorite part of every day is still you. Your smile, your voice, your presence, your love."
+      "noteBody": "After six years, a lot changed but my favorite part of every day is still you. Your smile, your hug, your voice, your presence, your love. Thank you for loving me in all my versions."
     },
     {
       "id": "chapter-7",
-      "image": "/uploads/placeholder-love.svg",
-      "caption": "Thank you for loving me in all my versions.",
+      "image": "uploads/img_6565.jpeg",
+      "caption": "Thank you!",
       "noteTitle": "Thank You",
-      "noteBody": "Thank you for celebrating my highs, holding me in my lows, and believing in me even when I doubted myself."
+      "noteBody": "Thank you for celebrating my highs, holding me in my lows, and believing in me even when I doubted myself. Thank you for loving me in all my versions!"
     },
     {
       "id": "chapter-8",
-      "image": "/uploads/placeholder-love.svg",
+      "image": "uploads/img_4123.jpeg",
       "caption": "Chapter six is beautiful. Forever is waiting.",
       "noteTitle": "Always Us",
       "noteBody": "Happy anniversary, my love. If I had to choose again, in every lifetime, in every universe, I would still choose you."
@@ -66,45 +66,45 @@
   "timeline": [
     {
       "id": "t1",
-      "dateLabel": "2018",
-      "title": "The First Hello",
-      "description": "The day we met, and ordinary days started becoming extraordinary.",
-      "image": "/uploads/placeholder-love.svg"
+      "dateLabel": "02/20/2012",
+      "title": "We said \"I love You\"",
+      "description": "The day we expressed our love for each other and decided we'll stay together forever!",
+      "image": "uploads/img-20131027-wa0001.jpg"
     },
     {
       "id": "t2",
-      "dateLabel": "2019",
-      "title": "We Became Us",
-      "description": "From two people with dreams to one team building a life together.",
-      "image": "/uploads/placeholder-love.svg"
+      "dateLabel": "07/02/2017",
+      "title": "Finally together after 6 long years",
+      "description": "From two people with dreams to one team ready to build a life together.",
+      "image": "uploads/img_7305.jpg"
     },
     {
       "id": "t3",
-      "dateLabel": "2020",
-      "title": "The Proposal",
-      "description": "One question, one beautiful yes, and a forever to look forward to.",
-      "image": "/uploads/placeholder-love.svg"
+      "dateLabel": "02/20/2020",
+      "title": "Our Wedding Day",
+      "description": "The day we promised to stand by each other in every season of life. Our dream came true!",
+      "image": "uploads/29503.jpeg"
     },
     {
       "id": "t4",
-      "dateLabel": "2020",
-      "title": "Our Wedding Day",
-      "description": "The day we promised to stand by each other in every season of life.",
-      "image": "/uploads/placeholder-love.svg"
+      "dateLabel": "09/13/2023",
+      "title": "Building Our Home",
+      "description": "Not just a place to live, but a life filled with warmth, trust, and laughter.",
+      "image": "uploads/efcf9bab-15fe-48f7-ab16-42d6443c94e0.jpg"
     },
     {
       "id": "t5",
-      "dateLabel": "2022",
-      "title": "Building Our Home",
-      "description": "Not just a place to live, but a life filled with warmth, trust, and laughter.",
-      "image": "/uploads/placeholder-love.svg"
+      "dateLabel": "08/30/2024",
+      "title": "We became three!",
+      "description": "One best things ever happened to us!",
+      "image": "uploads/img_1394.jpeg"
     },
     {
       "id": "t6",
       "dateLabel": "Today",
       "title": "Anniversary #6",
       "description": "Still in love. Still growing. Still us.",
-      "image": "/uploads/placeholder-love.svg"
+      "image": "uploads/img_4076.jpeg"
     }
   ],
   "quiz": [
@@ -112,37 +112,39 @@
       "id": "q1",
       "question": "Which moment made me realize you were 'the one'?",
       "options": [
-        "Our first long call",
-        "The way you cared",
-        "All of it"
+        "First time I saw you in annual function.",
+        "Our chat in the next annual function when you sent heart emoji for the first time.",
+        "Our small meetings and riding around on Activa. ",
+        "All of it!"
       ],
-      "correctIndex": 2,
-      "revealImage": "/uploads/placeholder-love.svg",
+      "correctIndex": 3,
+      "revealImage": "uploads/dsc01006.jpg",
       "revealNote": "It was never one single moment, it was the way you loved in every moment."
     },
     {
       "id": "q2",
       "question": "What is my favorite thing about us?",
       "options": [
-        "Our laughter",
-        "Our teamwork",
-        "How we never give up"
+        "We've always been best friends",
+        "We are always true to each other",
+        "How we do masti and fight"
       ],
       "correctIndex": 0,
-      "revealImage": "/uploads/placeholder-love.svg",
-      "revealNote": "No matter where we are, we find reasons to smile together."
+      "revealImage": "uploads/img_2228.jpeg",
+      "revealNote": "No matter what we are friends first and that's the best thing about us. "
     },
     {
       "id": "q3",
       "question": "What do I admire most about you?",
       "options": [
         "Your kindness",
-        "Your strength",
-        "Both"
+        "Your love and care",
+        "Your smile",
+        "All of above"
       ],
-      "correctIndex": 2,
-      "revealImage": "/uploads/placeholder-love.svg",
-      "revealNote": "You are gentle and strong at the same time, and I fall for that every day."
+      "correctIndex": 1,
+      "revealImage": "uploads/img_7677-2.jpeg",
+      "revealNote": "You are caring, pure hearted, kind and strong at the same time, and I fall for that every day. And your smile just melts me all the time!"
     },
     {
       "id": "q4",
@@ -153,25 +155,13 @@
         "A lifetime of both"
       ],
       "correctIndex": 2,
-      "revealImage": "/uploads/placeholder-love.svg",
-      "revealNote": "Adventures with you are fun, but even quiet evenings with you feel magical."
-    },
-    {
-      "id": "q5",
-      "question": "If I could choose one person in every lifetime?",
-      "options": [
-        "My best friend",
-        "My soulmate",
-        "You, always you"
-      ],
-      "correctIndex": 2,
-      "revealImage": "/uploads/placeholder-love.svg",
-      "revealNote": "Always you. In every world, in every story, in every life."
+      "revealImage": "uploads/img_8372.jpeg",
+      "revealNote": "Adventures with you are fun, but even quiet time with you feel magical."
     }
   ],
   "surprise": {
     "videoUrl": "/uploads/surprise-video.mp4",
     "envelopeTitle": "To My Forever Love",
-    "envelopeMessage": "Happy sixth anniversary, my love.\n\nThank you for every smile, every hug, every hard conversation, every silly joke, and every quiet moment where your hand found mine.\n\nYou have made my life softer, stronger, and far more beautiful than I ever imagined.\n\nI am proud of everything we have built and even more excited for everything still ahead of us.\n\nNo matter where life takes us, my favorite place will always be right beside you.\n\nI love you, endlessly."
+    "envelopeMessage": "Happy sixth anniversary, love! and well, actually happy 14th anniversary!\n\nJust want to say I can't be grateful enough to the universe that it made you become a part of my life. I've told everything to you in the past that how lucky I am and all that, but today I want to just thank you!\n\nThank you for existing. Thank you for coming all the way across the world away from your family and staying with me. Thank you for always being there for me in all the ups and downs we've been through. Thank you for every smile, every hug, every hard conversation, every silly joke, and every quiet moment where your hand found mine. Thank you for caring for my family, becoming one, and putting up with them always. Thank you for learning cooking for us and  now being an amazing cook that you are that everyone loves. Thank you for always going above and beyond to take care of me, tolerating my weaknesses and forgetfulness some time, and thanks for being patient. \n\nMost importantly, thanks for the best gift one can ever get that you gave to me and our families, that is our cutie Aaru. Our time at hospital will always be memorable and those few days changed our life forever. Thank you for being a phenomenal mom, who is also very hot, and taking care of two kids now.\n\nYou have made my life softer, stronger, and far more beautiful than I ever imagined. I do not care much about the future as I know with you being my side, its going to be awesome. With you being my side we can overcome any hurdles, so don't worry much. \n\nI am proud of everything we have built and even more excited for everything still ahead of us.\n\nNo matter where life takes us, my favorite place will always be right beside you in your arms (or you in my arms).\n\nWish you a very happy 6th anniversary and more 100s to come.\n\nI love you, endlessly. <3 <3"
   }
 }
