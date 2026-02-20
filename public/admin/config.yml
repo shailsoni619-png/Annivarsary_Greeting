@@ -1,8 +1,8 @@
 backend:
   name: github
-  repo: shailsoni619-png/anniversary-greeting
+  repo: shailsoni619-png/Anniversary_Greeting
   branch: main
-  base_url: https://your-worker-domain.workers.dev
+  base_url: https://anniversary-decap-oauth.shailsoni619.workers.dev
   auth_endpoint: /auth
 
 media_folder: public/uploads
