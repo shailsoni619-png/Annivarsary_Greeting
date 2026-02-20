@@ -3,4 +3,4 @@ main = "worker.js"
 compatibility_date = "2025-01-01"
 
 [vars]
-ALLOWED_ORIGINS = "https://shailsoni619-png.github.io"
+ALLOWED_ORIGINS = "https://shailsoni619-png.github.io,http://localhost:5173"

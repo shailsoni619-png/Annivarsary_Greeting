@@ -11,6 +11,30 @@ const decodeState = (value) => {
 
 const encodeState = (data) => btoa(JSON.stringify(data));
 
+const normalizeOrigin = (candidate) => {
+  if (!candidate) {
+    return null;
+  }
+
+  const hasProtocol = /^https?:\/\//i.test(candidate);
+  const value = hasProtocol ? candidate : `https://${candidate}`;
+
+  try {
+    return new URL(value).origin;
+  } catch {
+    return null;
+  }
+};
+
+const resolveOrigin = (searchParams) => {
+  const explicitOrigin = normalizeOrigin(searchParams.get("origin"));
+  if (explicitOrigin) {
+    return explicitOrigin;
+  }
+
+  return normalizeOrigin(searchParams.get("site_id"));
+};
+
 const isAllowedOrigin = (origin, allowList) => {
   if (!origin) {
     return false;
@@ -67,14 +91,24 @@ export default {
     }
 
     if (url.pathname === "/auth") {
-      const origin = url.searchParams.get("origin");
+      const provider = url.searchParams.get("provider") ?? "github";
+      const origin = resolveOrigin(url.searchParams);
+
+      if (provider !== "github") {
+        return authResponse("Unsupported OAuth provider.");
+      }
 
       if (!origin || !isAllowedOrigin(origin, env.ALLOWED_ORIGINS)) {
         return authResponse("Origin is missing or not allowed.");
       }
 
+      if (!env.GITHUB_CLIENT_ID) {
+        return authResponse("Missing GITHUB_CLIENT_ID secret.", 500);
+      }
+
       const state = encodeState({
         origin,
+        provider,
         nonce: crypto.randomUUID(),
         createdAt: Date.now(),
       });
@@ -95,6 +129,10 @@ export default {
 
       if (!code || !parsedState?.origin || !isAllowedOrigin(parsedState.origin, env.ALLOWED_ORIGINS)) {
         return authResponse("Invalid callback payload.");
+      }
+
+      if (!env.GITHUB_CLIENT_ID || !env.GITHUB_CLIENT_SECRET) {
+        return authResponse("Missing GitHub OAuth worker secrets.", 500);
       }
 
       const tokenResponse = await fetch(githubTokenUrl, {
