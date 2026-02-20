@@ -8,7 +8,7 @@
   "storyCards": [
     {
       "id": "chapter-1",
-      "image": "/uploads/chapter-1.jpg",
+      "image": "/uploads/img-20130706-wa0001.jpg",
       "caption": "One hello, and suddenly life felt brighter.",
       "noteTitle": "The First Spark",
       "noteBody": "I did not know then how important that moment would become. I just knew I wanted one more conversation with you, and then one more after that."
@@ -111,7 +111,11 @@
     {
       "id": "q1",
       "question": "Which moment made me realize you were 'the one'?",
-      "options": ["Our first long call", "The way you cared", "All of it"],
+      "options": [
+        "Our first long call",
+        "The way you cared",
+        "All of it"
+      ],
       "correctIndex": 2,
       "revealImage": "/uploads/placeholder-love.svg",
       "revealNote": "It was never one single moment, it was the way you loved in every moment."
@@ -119,7 +123,11 @@
     {
       "id": "q2",
       "question": "What is my favorite thing about us?",
-      "options": ["Our laughter", "Our teamwork", "How we never give up"],
+      "options": [
+        "Our laughter",
+        "Our teamwork",
+        "How we never give up"
+      ],
       "correctIndex": 0,
       "revealImage": "/uploads/placeholder-love.svg",
       "revealNote": "No matter where we are, we find reasons to smile together."
@@ -127,7 +135,11 @@
     {
       "id": "q3",
       "question": "What do I admire most about you?",
-      "options": ["Your kindness", "Your strength", "Both"],
+      "options": [
+        "Your kindness",
+        "Your strength",
+        "Both"
+      ],
       "correctIndex": 2,
       "revealImage": "/uploads/placeholder-love.svg",
       "revealNote": "You are gentle and strong at the same time, and I fall for that every day."
@@ -135,7 +147,11 @@
     {
       "id": "q4",
       "question": "What do I want more of with you?",
-      "options": ["More trips", "More cozy evenings", "A lifetime of both"],
+      "options": [
+        "More trips",
+        "More cozy evenings",
+        "A lifetime of both"
+      ],
       "correctIndex": 2,
       "revealImage": "/uploads/placeholder-love.svg",
       "revealNote": "Adventures with you are fun, but even quiet evenings with you feel magical."
@@ -143,7 +159,11 @@
     {
       "id": "q5",
       "question": "If I could choose one person in every lifetime?",
-      "options": ["My best friend", "My soulmate", "You, always you"],
+      "options": [
+        "My best friend",
+        "My soulmate",
+        "You, always you"
+      ],
       "correctIndex": 2,
       "revealImage": "/uploads/placeholder-love.svg",
       "revealNote": "Always you. In every world, in every story, in every life."
