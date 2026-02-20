@@ -1,0 +1,13 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F8D7D2"/>
+      <stop offset="1" stop-color="#D88684"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <circle cx="240" cy="170" r="120" fill="white" fill-opacity="0.18"/>
+  <circle cx="980" cy="740" r="160" fill="white" fill-opacity="0.14"/>
+  <path d="M606.5 517.2C541.4 467.1 499.7 430.5 470.2 397.2C442.6 365.9 429 336.2 429 304.5C429 250.5 471.1 208 525.4 208C556.1 208 585.4 221.4 606.5 244.4C627.6 221.4 656.9 208 687.6 208C741.9 208 784 250.5 784 304.5C784 336.2 770.4 365.9 742.8 397.2C713.3 430.5 671.6 467.1 606.5 517.2Z" fill="#7A2E3A"/>
+  <text x="600" y="635" text-anchor="middle" font-family="Georgia, serif" font-size="52" fill="#7A2E3A">Upload your memory here</text>
+</svg>

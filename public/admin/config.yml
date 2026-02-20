@@ -1,0 +1,75 @@
+backend:
+  name: github
+  repo: shailsoni619-png/anniversary-greeting
+  branch: main
+  base_url: https://your-worker-domain.workers.dev
+  auth_endpoint: /auth
+
+media_folder: public/uploads
+public_folder: /uploads
+
+publish_mode: simple
+
+collections:
+  - name: anniversary_content
+    label: Anniversary Content
+    files:
+      - label: App Content
+        name: app_content
+        file: src/content/content.json
+        format: json
+        fields:
+          - label: Meta
+            name: meta
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Subtitle, name: subtitle, widget: string }
+              - { label: Passcode Hint, name: passcodeHint, widget: string }
+              - { label: Expected Duration (minutes), name: expectedDurationMin, widget: number, value_type: int, min: 1 }
+
+          - label: Story Cards
+            name: storyCards
+            widget: list
+            min: 1
+            fields:
+              - { label: ID, name: id, widget: string }
+              - { label: Image, name: image, widget: image }
+              - { label: Caption, name: caption, widget: text }
+              - { label: Note Title, name: noteTitle, widget: string }
+              - { label: Note Body, name: noteBody, widget: text }
+
+          - label: Timeline Events
+            name: timeline
+            widget: list
+            min: 1
+            fields:
+              - { label: ID, name: id, widget: string }
+              - { label: Date Label, name: dateLabel, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Description, name: description, widget: text }
+              - { label: Image, name: image, widget: image }
+
+          - label: Quiz Questions
+            name: quiz
+            widget: list
+            min: 1
+            fields:
+              - { label: ID, name: id, widget: string }
+              - { label: Question, name: question, widget: text }
+              - label: Options
+                name: options
+                widget: list
+                min: 2
+                field: { label: Option, name: option, widget: string }
+              - { label: Correct Index (0-based), name: correctIndex, widget: number, value_type: int, min: 0 }
+              - { label: Reveal Image, name: revealImage, widget: image }
+              - { label: Reveal Note, name: revealNote, widget: text }
+
+          - label: Surprise
+            name: surprise
+            widget: object
+            fields:
+              - { label: Video URL, name: videoUrl, widget: string, hint: "Use /uploads/your-video.mp4 after upload" }
+              - { label: Envelope Title, name: envelopeTitle, widget: string }
+              - { label: Envelope Message, name: envelopeMessage, widget: text }
