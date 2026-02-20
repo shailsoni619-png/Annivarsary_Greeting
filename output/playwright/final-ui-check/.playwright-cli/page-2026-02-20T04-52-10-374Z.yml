@@ -1,0 +1,20 @@
+- generic [ref=e3]:
+  - navigation "Journey progress" [ref=e28]:
+    - link "Story" [ref=e29] [cursor=pointer]:
+      - /url: "#/story"
+      - text: Story
+    - link "Timeline" [ref=e31] [cursor=pointer]:
+      - /url: "#/timeline"
+      - text: Timeline
+    - link "Quiz" [ref=e33] [cursor=pointer]:
+      - /url: "#/quiz"
+      - text: Quiz
+    - link "Surprise" [active] [ref=e35] [cursor=pointer]:
+      - /url: "#/surprise"
+      - text: Surprise
+  - main [ref=e102]:
+    - heading "Final Surprise" [level=2] [ref=e104]
+    - button "Open envelope" [ref=e106] [cursor=pointer]:
+      - generic [ref=e110]: ❤
+    - link "Start Again" [ref=e112] [cursor=pointer]:
+      - /url: "#/"

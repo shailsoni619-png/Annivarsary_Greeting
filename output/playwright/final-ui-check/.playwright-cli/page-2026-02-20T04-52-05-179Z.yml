@@ -1,0 +1,61 @@
+- generic [ref=e3]:
+  - navigation "Journey progress" [ref=e28]:
+    - link "Story" [ref=e29] [cursor=pointer]:
+      - /url: "#/story"
+      - text: Story
+    - link "Timeline" [ref=e31] [cursor=pointer]:
+      - /url: "#/timeline"
+      - text: Timeline
+    - link "Quiz" [ref=e33] [cursor=pointer]:
+      - /url: "#/quiz"
+      - text: Quiz
+    - link "Surprise" [ref=e35] [cursor=pointer]:
+      - /url: "#/surprise"
+      - text: Surprise
+  - main [ref=e37]:
+    - generic [ref=e38]:
+      - paragraph [ref=e39]: Chapter by Chapter
+      - heading "Swipe Through Our Story" [level=2] [ref=e40]
+    - generic [ref=e42]:
+      - article [ref=e44]:
+        - img "One hello, and suddenly life felt brighter." [ref=e45]
+        - generic [ref=e46]:
+          - paragraph [ref=e47]: One hello, and suddenly life felt brighter.
+          - button "Tap to open note" [ref=e48]
+      - article [ref=e50]:
+        - img "Our late-night talks became my favorite place." [ref=e51]
+        - generic [ref=e52]:
+          - paragraph [ref=e53]: Our late-night talks became my favorite place.
+          - button "Tap to open note" [ref=e54]
+      - article [ref=e56]:
+        - img "We chose each other, not just once, but forever." [ref=e57]
+        - generic [ref=e58]:
+          - paragraph [ref=e59]: We chose each other, not just once, but forever.
+          - button "Tap to open note" [ref=e60]
+      - article [ref=e62]:
+        - img "Trips, chai breaks, random selfies, and tiny rituals." [ref=e63]
+        - generic [ref=e64]:
+          - paragraph [ref=e65]: Trips, chai breaks, random selfies, and tiny rituals.
+          - button "Tap to open note" [ref=e66]
+      - article [ref=e68]:
+        - img "Even tough days felt lighter because we were a team." [ref=e69]
+        - generic [ref=e70]:
+          - paragraph [ref=e71]: Even tough days felt lighter because we were a team.
+          - button "Tap to open note" [ref=e72]
+      - article [ref=e74]:
+        - img "You are still my safest place and my happiest thought." [ref=e75]
+        - generic [ref=e76]:
+          - paragraph [ref=e77]: You are still my safest place and my happiest thought.
+          - button "Tap to open note" [ref=e78]
+      - article [ref=e80]:
+        - img "Thank you for loving me in all my versions." [ref=e81]
+        - generic [ref=e82]:
+          - paragraph [ref=e83]: Thank you for loving me in all my versions.
+          - button "Tap to open note" [ref=e84]
+      - article [ref=e86]:
+        - img "Chapter six is beautiful. Forever is waiting." [ref=e87]
+        - generic [ref=e88]:
+          - paragraph [ref=e89]: Chapter six is beautiful. Forever is waiting.
+          - button "Tap to open note" [ref=e90]
+    - link "Continue to Timeline" [ref=e101] [cursor=pointer]:
+      - /url: "#/timeline"

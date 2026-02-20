@@ -1,0 +1,19 @@
+- main [ref=e4]:
+  - generic [ref=e5]:
+    - paragraph [ref=e6]: Anniversary Unlock
+    - heading "Our Sixth Anniversary" [level=1] [ref=e7]
+    - paragraph [ref=e8]: Six years, one heartbeat, endless gratitude.
+    - paragraph [ref=e9]: A 8-minute surprise made with love.
+    - paragraph [ref=e15]: "Hint: the date that changed my life (MMDD)"
+    - group "Passcode keypad" [ref=e16]:
+      - button "1" [ref=e17]
+      - button "2" [ref=e18]
+      - button "3" [ref=e19]
+      - button "4" [ref=e20]
+      - button "5" [ref=e21]
+      - button "6" [ref=e22]
+      - button "7" [ref=e23]
+      - button "8" [ref=e24]
+      - button "9" [ref=e25]
+      - button "0" [ref=e26]
+      - button "Clear" [ref=e27]

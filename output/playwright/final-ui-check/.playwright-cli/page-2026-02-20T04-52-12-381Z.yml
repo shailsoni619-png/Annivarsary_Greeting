@@ -1,0 +1,24 @@
+- generic [ref=e3]:
+  - navigation "Journey progress" [ref=e28]:
+    - link "Story" [ref=e29] [cursor=pointer]:
+      - /url: "#/story"
+      - text: Story
+    - link "Timeline" [ref=e31] [cursor=pointer]:
+      - /url: "#/timeline"
+      - text: Timeline
+    - link "Quiz" [ref=e33] [cursor=pointer]:
+      - /url: "#/quiz"
+      - text: Quiz
+    - link "Surprise" [ref=e35] [cursor=pointer]:
+      - /url: "#/surprise"
+      - text: Surprise
+  - main [ref=e102]:
+    - heading "Final Surprise" [level=2] [ref=e104]
+    - generic [ref=e105]:
+      - button "Open envelope" [active] [ref=e106] [cursor=pointer]:
+        - generic [ref=e110]: ❤
+      - article [ref=e113]:
+        - heading "To My Forever Love" [level=3] [ref=e114]
+        - paragraph [ref=e116]: Happy sixth anniversary, my love. Thank you for every smile, every hug, every hard conversation, every silly joke, and every quiet moment where your hand found mine. You have made my life softer, stronger, and far more beautiful than I ever imagined. I am proud of everything we have built and even more excited for everything still ahead of us. No matter where life takes us, my favorite place will always be right beside you. I love you, endlessly.
+    - link "Start Again" [ref=e112] [cursor=pointer]:
+      - /url: "#/"
