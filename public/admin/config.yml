@@ -6,7 +6,7 @@ backend:
   auth_endpoint: /auth
 
 media_folder: public/uploads
-public_folder: /uploads
+public_folder: uploads
 
 publish_mode: simple
 
@@ -70,6 +70,6 @@ collections:
             name: surprise
             widget: object
             fields:
-              - { label: Video URL, name: videoUrl, widget: string, hint: "Use /uploads/your-video.mp4 after upload" }
+              - { label: Video URL, name: videoUrl, widget: string, hint: "Use uploads/your-video.mp4 after upload" }
               - { label: Envelope Title, name: envelopeTitle, widget: string }
               - { label: Envelope Message, name: envelopeMessage, widget: text }

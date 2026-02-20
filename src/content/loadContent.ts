@@ -2,6 +2,8 @@ import contentJson from "./content.json";
 import { defaultContent } from "./defaultContent";
 import type { AppContent, QuizQuestion, StoryCard, TimelineEvent } from "../types/content";
 
+const appBase = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+
 const safeString = (value: unknown, fallback: string): string => {
   if (typeof value !== "string") {
     return fallback;
@@ -19,6 +21,35 @@ const safeNumber = (value: unknown, fallback: number): number => {
   return value;
 };
 
+const resolveMediaPath = (value: string): string => {
+  if (!value) {
+    return value;
+  }
+
+  if (
+    value.startsWith("http://")
+    || value.startsWith("https://")
+    || value.startsWith("data:")
+    || value.startsWith("blob:")
+  ) {
+    return value;
+  }
+
+  if (value.startsWith(appBase)) {
+    return value;
+  }
+
+  if (value.startsWith("/uploads/")) {
+    return `${appBase}${value.slice(1)}`;
+  }
+
+  if (value.startsWith("uploads/")) {
+    return `${appBase}${value}`;
+  }
+
+  return value;
+};
+
 const safeStoryCard = (value: unknown, fallback: StoryCard): StoryCard => {
   if (!value || typeof value !== "object") {
     return fallback;
@@ -28,7 +59,7 @@ const safeStoryCard = (value: unknown, fallback: StoryCard): StoryCard => {
 
   return {
     id: safeString(entry.id, fallback.id),
-    image: safeString(entry.image, fallback.image),
+    image: resolveMediaPath(safeString(entry.image, fallback.image)),
     caption: safeString(entry.caption, fallback.caption),
     noteTitle: safeString(entry.noteTitle, fallback.noteTitle),
     noteBody: safeString(entry.noteBody, fallback.noteBody),
@@ -47,7 +78,7 @@ const safeTimelineEvent = (value: unknown, fallback: TimelineEvent): TimelineEve
     dateLabel: safeString(entry.dateLabel, fallback.dateLabel),
     title: safeString(entry.title, fallback.title),
     description: safeString(entry.description, fallback.description),
-    image: safeString(entry.image, fallback.image),
+    image: resolveMediaPath(safeString(entry.image, fallback.image)),
   };
 };
 
@@ -74,7 +105,7 @@ const safeQuizQuestion = (value: unknown, fallback: QuizQuestion): QuizQuestion 
     question: safeString(entry.question, fallback.question),
     options: normalizedOptions,
     correctIndex,
-    revealImage: safeString(entry.revealImage, fallback.revealImage),
+    revealImage: resolveMediaPath(safeString(entry.revealImage, fallback.revealImage)),
     revealNote: safeString(entry.revealNote, fallback.revealNote),
   };
 };
@@ -101,7 +132,7 @@ export const loadAppContent = (): AppContent => {
     timeline: safeArray(raw.timeline, defaultContent.timeline, safeTimelineEvent),
     quiz: safeArray(raw.quiz, defaultContent.quiz, safeQuizQuestion),
     surprise: {
-      videoUrl: safeString(raw.surprise?.videoUrl, defaultContent.surprise.videoUrl),
+      videoUrl: resolveMediaPath(safeString(raw.surprise?.videoUrl, defaultContent.surprise.videoUrl)),
       envelopeTitle: safeString(raw.surprise?.envelopeTitle, defaultContent.surprise.envelopeTitle),
       envelopeMessage: safeString(raw.surprise?.envelopeMessage, defaultContent.surprise.envelopeMessage),
     },
