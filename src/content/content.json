@@ -97,14 +97,14 @@
       "dateLabel": "08/30/2024",
       "title": "We became three!",
       "description": "One best things ever happened to us!",
-      "image": "uploads/img_1394.jpeg"
+      "image": "uploads/img_1394-2.jpeg"
     },
     {
       "id": "t6",
       "dateLabel": "Today",
       "title": "Anniversary #6",
       "description": "Still in love. Still growing. Still us.",
-      "image": "uploads/img_4076.jpeg"
+      "image": "uploads/img_4079.jpeg"
     }
   ],
   "quiz": [
@@ -142,7 +142,7 @@
         "Your smile",
         "All of above"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "revealImage": "uploads/img_7677-2.jpeg",
       "revealNote": "You are caring, pure hearted, kind and strong at the same time, and I fall for that every day. And your smile just melts me all the time!"
     },
