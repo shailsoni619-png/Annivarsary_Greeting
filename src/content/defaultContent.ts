@@ -4,144 +4,175 @@ const placeholder = "/uploads/placeholder-love.svg";
 
 export const defaultContent: AppContent = {
   meta: {
-    title: "Our 6th Anniversary",
-    subtitle: "A little journey made just for you",
-    passcodeHint: "Hint: the day we said 'I do'",
-    expectedDurationMin: 7,
+    title: "Our Sixth Anniversary",
+    subtitle: "Six years, one heartbeat, endless gratitude.",
+    passcodeHint: "Hint: the date that changed my life (MMDD)",
+    expectedDurationMin: 8,
   },
   storyCards: [
     {
       id: "chapter-1",
       image: placeholder,
-      caption: "Every big love story starts with one small hello.",
-      noteTitle: "The Beginning",
+      caption: "One hello, and suddenly life felt brighter.",
+      noteTitle: "The First Spark",
       noteBody:
-        "I still remember that first spark. It felt simple, and still unforgettable.",
+        "I did not know then how important that moment would become. I just knew I wanted one more conversation with you, and then one more after that.",
     },
     {
       id: "chapter-2",
       image: placeholder,
-      caption: "From long talks to longer dreams.",
-      noteTitle: "Us Growing",
+      caption: "Our late-night talks became my favorite place.",
+      noteTitle: "Falling For You",
       noteBody:
-        "Somewhere between laughter and late-night conversations, you became my home.",
+        "Somewhere between the laughter, the teasing, and the long calls, my world quietly started orbiting around you.",
     },
     {
       id: "chapter-3",
       image: placeholder,
-      caption: "We made promises and built a life around them.",
-      noteTitle: "Our Wedding Day",
+      caption: "We chose each other, not just once, but forever.",
+      noteTitle: "The Promise",
       noteBody:
-        "That day was beautiful, but the real gift is everything that came after.",
+        "Our wedding day was magical, but what means even more is every ordinary day after it where we kept choosing love, patience, and us.",
     },
     {
       id: "chapter-4",
       image: placeholder,
-      caption: "Trips, milestones, and tiny ordinary moments.",
-      noteTitle: "Our Adventures",
+      caption: "Trips, chai breaks, random selfies, and tiny rituals.",
+      noteTitle: "Our Little World",
       noteBody:
-        "You make every place better, and every day brighter, simply by being there.",
+        "You make every place feel like home. Even the smallest moments become memories when I am with you.",
     },
     {
       id: "chapter-5",
       image: placeholder,
-      caption: "Even the hard days became softer with you.",
+      caption: "Even tough days felt lighter because we were a team.",
       noteTitle: "Our Strength",
       noteBody:
-        "Thank you for believing in us, and for choosing love in all its forms.",
+        "Thank you for standing beside me through everything. Your calm, your kindness, and your courage have carried us through more than words can hold.",
     },
     {
       id: "chapter-6",
       image: placeholder,
-      caption: "Six years later, I would still choose you.",
-      noteTitle: "Today & Always",
+      caption: "You are still my safest place and my happiest thought.",
+      noteTitle: "Today",
       noteBody:
-        "Happy anniversary, my love. This is only chapter six of forever.",
+        "After six years, my favorite part of every day is still you. Your smile, your voice, your presence, your love.",
+    },
+    {
+      id: "chapter-7",
+      image: placeholder,
+      caption: "Thank you for loving me in all my versions.",
+      noteTitle: "Thank You",
+      noteBody:
+        "Thank you for celebrating my highs, holding me in my lows, and believing in me even when I doubted myself.",
+    },
+    {
+      id: "chapter-8",
+      image: placeholder,
+      caption: "Chapter six is beautiful. Forever is waiting.",
+      noteTitle: "Always Us",
+      noteBody:
+        "Happy anniversary, my love. If I had to choose again, in every lifetime, in every universe, I would still choose you.",
     },
   ],
   timeline: [
     {
       id: "t1",
       dateLabel: "2018",
-      title: "First Date",
-      description: "Where everything started and nothing felt ordinary after.",
+      title: "The First Hello",
+      description:
+        "The day we met, and ordinary days started becoming extraordinary.",
       image: placeholder,
     },
     {
       id: "t2",
       dateLabel: "2019",
-      title: "First Big Trip",
-      description: "The first of many journeys where we laughed too much.",
+      title: "We Became Us",
+      description:
+        "From two people with dreams to one team building a life together.",
       image: placeholder,
     },
     {
       id: "t3",
       dateLabel: "2020",
       title: "The Proposal",
-      description: "One question, one yes, and a lifetime of gratitude.",
+      description:
+        "One question, one beautiful yes, and a forever to look forward to.",
       image: placeholder,
     },
     {
       id: "t4",
       dateLabel: "2020",
-      title: "Our Wedding",
-      description: "The day we promised forever.",
+      title: "Our Wedding Day",
+      description:
+        "The day we promised to stand by each other in every season of life.",
       image: placeholder,
     },
     {
       id: "t5",
+      dateLabel: "2022",
+      title: "Building Our Home",
+      description:
+        "Not just a place to live, but a life filled with warmth, trust, and laughter.",
+      image: placeholder,
+    },
+    {
+      id: "t6",
       dateLabel: "Today",
       title: "Anniversary #6",
-      description: "Still in love, still growing, still us.",
+      description: "Still in love. Still growing. Still us.",
       image: placeholder,
     },
   ],
   quiz: [
     {
       id: "q1",
-      question: "Where did we click our first selfie together?",
-      options: ["At the cafe", "In the car", "At home"],
-      correctIndex: 0,
+      question: "Which moment made me realize you were 'the one'?",
+      options: ["Our first long call", "The way you cared", "All of it"],
+      correctIndex: 2,
       revealImage: placeholder,
-      revealNote: "That smile in that photo still melts me.",
+      revealNote:
+        "It was never one single moment, it was the way you loved in every moment.",
     },
     {
       id: "q2",
-      question: "Who said 'I love you' first?",
-      options: ["You", "Me", "At the same time"],
-      correctIndex: 1,
+      question: "What is my favorite thing about us?",
+      options: ["Our laughter", "Our teamwork", "How we never give up"],
+      correctIndex: 0,
       revealImage: placeholder,
-      revealNote: "Best decision I ever made: saying it, and meaning it forever.",
+      revealNote: "No matter where we are, we find reasons to smile together.",
     },
     {
       id: "q3",
-      question: "Which song instantly reminds me of you?",
-      options: ["Our wedding song", "Our road trip song", "Both"],
+      question: "What do I admire most about you?",
+      options: ["Your kindness", "Your strength", "Both"],
       correctIndex: 2,
       revealImage: placeholder,
-      revealNote: "Every love song started sounding like us.",
+      revealNote:
+        "You are gentle and strong at the same time, and I fall for that every day.",
     },
     {
       id: "q4",
-      question: "What is my favorite thing about us?",
-      options: ["How we laugh", "How we care", "How we never give up"],
+      question: "What do I want more of with you?",
+      options: ["More trips", "More cozy evenings", "A lifetime of both"],
       correctIndex: 2,
       revealImage: placeholder,
-      revealNote: "No matter what happens, we stay on the same team.",
+      revealNote:
+        "Adventures with you are fun, but even quiet evenings with you feel magical.",
     },
     {
       id: "q5",
-      question: "What would I choose in every lifetime?",
-      options: ["A quiet life", "A new city", "You"],
+      question: "If I could choose one person in every lifetime?",
+      options: ["My best friend", "My soulmate", "You, always you"],
       correctIndex: 2,
       revealImage: placeholder,
-      revealNote: "Always and only you.",
+      revealNote: "Always you. In every world, in every story, in every life.",
     },
   ],
   surprise: {
     videoUrl: "/uploads/surprise-video.mp4",
-    envelopeTitle: "To My Love",
+    envelopeTitle: "To My Forever Love",
     envelopeMessage:
-      "Happy 6th anniversary. Thank you for every hug, every laugh, every small moment, and every dream we built together. You are the best part of my life, and I love you more with every year.",
+      "Happy sixth anniversary, my love.\n\nThank you for every smile, every hug, every hard conversation, every silly joke, and every quiet moment where your hand found mine.\n\nYou have made my life softer, stronger, and far more beautiful than I ever imagined.\n\nI am proud of everything we have built and even more excited for everything still ahead of us.\n\nNo matter where life takes us, my favorite place will always be right beside you.\n\nI love you, endlessly.",
   },
 };
