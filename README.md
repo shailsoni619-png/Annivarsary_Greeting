@@ -25,10 +25,10 @@ npm run dev
 Optional passcode override:
 
 ```bash
-VITE_PASSCODE=1206 npm run dev
+VITE_PASSCODE=0220 npm run dev
 ```
 
-Default passcode is `1206`.
+Default passcode is `0220`.
 
 ## Content editing
 

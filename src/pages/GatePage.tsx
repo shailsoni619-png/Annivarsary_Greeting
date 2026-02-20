@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import type { AppMeta } from "../types/content";
 
 const keypadNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
-const fallbackPasscode = "1206";
+const fallbackPasscode = "0220";
 
 type GatePageProps = {
   meta: AppMeta;
@@ -22,31 +22,30 @@ export const GatePage = ({ meta, onUnlock }: GatePageProps) => {
   }, [code.length, passcode.length]);
 
   const addDigit = (digit: number) => {
-    setCode((previous) => {
-      if (previous.length >= passcode.length) {
-        return previous;
-      }
+    if (code.length >= passcode.length) {
+      return;
+    }
 
-      const nextCode = `${previous}${digit}`;
+    const nextCode = `${code}${digit}`;
+    setCode(nextCode);
 
-      if (nextCode.length === passcode.length) {
-        if (nextCode === passcode) {
-          onUnlock();
-          setTimeout(() => {
-            navigate("/story");
-          }, 350);
-          return nextCode;
-        }
+    if (nextCode.length !== passcode.length) {
+      return;
+    }
 
-        setError(true);
-        setTimeout(() => {
-          setCode("");
-          setError(false);
-        }, 500);
-      }
+    if (nextCode === passcode) {
+      onUnlock();
+      setTimeout(() => {
+        navigate("/story");
+      }, 350);
+      return;
+    }
 
-      return nextCode;
-    });
+    setError(true);
+    setTimeout(() => {
+      setCode("");
+      setError(false);
+    }, 500);
   };
 
   return (
