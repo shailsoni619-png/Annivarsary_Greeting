@@ -67,9 +67,24 @@ const callbackHtml = (origin, payload) => {
     <script>
       (function () {
         const payload = ${encodedPayload};
-        const message = "authorization:github:success:" + JSON.stringify(payload);
-        window.opener.postMessage(message, "${origin}");
-        window.close();
+        const sendSuccess = function () {
+          const message = "authorization:github:success:" + JSON.stringify(payload);
+          window.opener.postMessage(message, "*");
+          setTimeout(function () { window.close(); }, 120);
+        };
+
+        const receiveMessage = function () {
+          sendSuccess();
+          window.removeEventListener("message", receiveMessage, false);
+        };
+
+        window.addEventListener("message", receiveMessage, false);
+        window.opener.postMessage("authorizing:github", "*");
+
+        // Fallback for clients that do not reply to the handshake event.
+        setTimeout(function () {
+          sendSuccess();
+        }, 400);
       })();
     </script>
   </body>
