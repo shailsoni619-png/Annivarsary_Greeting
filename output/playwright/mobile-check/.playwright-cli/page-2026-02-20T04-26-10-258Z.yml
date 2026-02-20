@@ -1,0 +1,51 @@
+- generic [ref=e3]:
+  - navigation "Journey progress" [ref=e822]:
+    - link "Story" [ref=e823] [cursor=pointer]:
+      - /url: "#/story"
+      - text: Story
+    - link "Timeline" [ref=e825] [cursor=pointer]:
+      - /url: "#/timeline"
+      - text: Timeline
+    - link "Quiz" [ref=e827] [cursor=pointer]:
+      - /url: "#/quiz"
+      - text: Quiz
+    - link "Surprise" [ref=e829] [cursor=pointer]:
+      - /url: "#/surprise"
+      - text: Surprise
+  - main [ref=e831]:
+    - generic [ref=e832]:
+      - paragraph [ref=e833]: Chapter by Chapter
+      - heading "Swipe Through Our Story" [level=2] [ref=e834]
+    - generic [ref=e836]:
+      - article [ref=e838]:
+        - img "Every big love story starts with one small hello." [ref=e839]
+        - generic [ref=e840]:
+          - paragraph [ref=e841]: Every big love story starts with one small hello.
+          - button "Tap to open note" [ref=e842]
+      - article [ref=e844]:
+        - img "From long talks to longer dreams." [ref=e845]
+        - generic [ref=e846]:
+          - paragraph [ref=e847]: From long talks to longer dreams.
+          - button "Tap to open note" [ref=e848]
+      - article [ref=e850]:
+        - img "We made promises and built a life around them." [ref=e851]
+        - generic [ref=e852]:
+          - paragraph [ref=e853]: We made promises and built a life around them.
+          - button "Tap to open note" [ref=e854]
+      - article [ref=e856]:
+        - img "Trips, milestones, and tiny ordinary moments." [ref=e857]
+        - generic [ref=e858]:
+          - paragraph [ref=e859]: Trips, milestones, and tiny ordinary moments.
+          - button "Tap to open note" [ref=e860]
+      - article [ref=e862]:
+        - img "Even the hard days became softer with you." [ref=e863]
+        - generic [ref=e864]:
+          - paragraph [ref=e865]: Even the hard days became softer with you.
+          - button "Tap to open note" [ref=e866]
+      - article [ref=e868]:
+        - img "Six years later, I would still choose you." [ref=e869]
+        - generic [ref=e870]:
+          - paragraph [ref=e871]: Six years later, I would still choose you.
+          - button "Tap to open note" [ref=e872]
+    - link "Continue to Timeline" [ref=e881] [cursor=pointer]:
+      - /url: "#/timeline"

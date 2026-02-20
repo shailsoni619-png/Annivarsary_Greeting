@@ -1,0 +1,19 @@
+- main [ref=e798]:
+  - generic [ref=e799]:
+    - paragraph [ref=e800]: Anniversary Unlock
+    - heading "Our 6th Anniversary" [level=1] [ref=e801]
+    - paragraph [ref=e802]: A little journey made just for you
+    - paragraph [ref=e803]: A 7-minute surprise made with love.
+    - paragraph [ref=e809]: "Hint: the day we said 'I do'"
+    - group "Passcode keypad" [ref=e810]:
+      - button "1" [ref=e811]
+      - button "2" [ref=e812]
+      - button "3" [ref=e813]
+      - button "4" [ref=e814]
+      - button "5" [ref=e815]
+      - button "6" [ref=e816]
+      - button "7" [ref=e817]
+      - button "8" [ref=e818]
+      - button "9" [ref=e819]
+      - button "0" [ref=e820]
+      - button "Clear" [ref=e821]

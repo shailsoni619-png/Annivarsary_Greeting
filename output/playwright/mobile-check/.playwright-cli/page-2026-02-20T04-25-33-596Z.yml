@@ -1,0 +1,21 @@
+- generic [ref=e3]:
+  - navigation "Journey progress" [ref=e396]:
+    - link "Story" [ref=e397] [cursor=pointer]:
+      - /url: "#/story"
+      - text: Story
+    - link "Timeline" [ref=e399] [cursor=pointer]:
+      - /url: "#/timeline"
+      - text: Timeline
+    - link "Quiz" [ref=e401] [cursor=pointer]:
+      - /url: "#/quiz"
+      - text: Quiz
+    - link "Surprise" [ref=e403] [cursor=pointer]:
+      - /url: "#/surprise"
+      - text: Surprise
+  - main [ref=e506]:
+    - generic [ref=e507]:
+      - paragraph [ref=e508]: Final Surprise
+      - heading "A Gift for You" [level=2] [ref=e509]
+    - button "Tap to open gift" [ref=e511]
+    - link "Start Again" [ref=e513] [cursor=pointer]:
+      - /url: "#/"

@@ -1,0 +1,26 @@
+- generic [ref=e3]:
+  - navigation "Journey progress" [ref=e964]:
+    - link "Story" [ref=e965] [cursor=pointer]:
+      - /url: "#/story"
+      - text: Story
+    - link "Timeline" [ref=e967] [cursor=pointer]:
+      - /url: "#/timeline"
+      - text: Timeline
+    - link "Quiz" [ref=e969] [cursor=pointer]:
+      - /url: "#/quiz"
+      - text: Quiz
+    - link "Surprise" [ref=e971] [cursor=pointer]:
+      - /url: "#/surprise"
+      - text: Surprise
+  - main [ref=e1061]:
+    - generic [ref=e1062]:
+      - paragraph [ref=e1063]: Fun Corner
+      - heading "Mini Love Quiz" [level=2] [ref=e1064]
+      - paragraph [ref=e1065]: Question 1 of 5
+    - generic [ref=e1066]:
+      - heading "Where did we click our first selfie together?" [level=3] [ref=e1067]
+      - generic [ref=e1068]:
+        - button "At the cafe" [ref=e1069]
+        - button "In the car" [ref=e1070]
+        - button "At home" [ref=e1071]
+      - button "Next Question" [disabled] [ref=e1073]

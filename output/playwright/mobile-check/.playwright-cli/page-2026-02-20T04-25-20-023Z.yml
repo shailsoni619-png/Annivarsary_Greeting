@@ -1,0 +1,46 @@
+- generic [ref=e3]:
+  - navigation "Journey progress" [ref=e112]:
+    - link "Story" [ref=e113] [cursor=pointer]:
+      - /url: "#/story"
+      - text: Story
+    - link "Timeline" [ref=e115] [cursor=pointer]:
+      - /url: "#/timeline"
+      - text: Timeline
+    - link "Quiz" [ref=e117] [cursor=pointer]:
+      - /url: "#/quiz"
+      - text: Quiz
+    - link "Surprise" [ref=e119] [cursor=pointer]:
+      - /url: "#/surprise"
+      - text: Surprise
+  - main [ref=e172]:
+    - generic [ref=e173]:
+      - paragraph [ref=e174]: Our Milestones
+      - heading "Memory Timeline" [level=2] [ref=e175]
+    - generic [ref=e176]:
+      - article [ref=e177]:
+        - paragraph [ref=e179]: "2018"
+        - heading "First Date" [level=3] [ref=e180]
+        - paragraph [ref=e181]: Where everything started and nothing felt ordinary after.
+        - img "First Date" [ref=e182]
+      - article [ref=e183]:
+        - paragraph [ref=e185]: "2019"
+        - heading "First Big Trip" [level=3] [ref=e186]
+        - paragraph [ref=e187]: The first of many journeys where we laughed too much.
+        - img "First Big Trip" [ref=e188]
+      - article [ref=e189]:
+        - paragraph [ref=e191]: "2020"
+        - heading "The Proposal" [level=3] [ref=e192]
+        - paragraph [ref=e193]: One question, one yes, and a lifetime of gratitude.
+        - img "The Proposal" [ref=e194]
+      - article [ref=e195]:
+        - paragraph [ref=e197]: "2020"
+        - heading "Our Wedding" [level=3] [ref=e198]
+        - paragraph [ref=e199]: The day we promised forever.
+        - img "Our Wedding" [ref=e200]
+      - article [ref=e201]:
+        - paragraph [ref=e203]: Today
+        - 'heading "Anniversary #6" [level=3] [ref=e204]'
+        - paragraph [ref=e205]: Still in love, still growing, still us.
+        - 'img "Anniversary #6" [ref=e206]'
+    - link "Start Our Mini Quiz" [ref=e208] [cursor=pointer]:
+      - /url: "#/quiz"
